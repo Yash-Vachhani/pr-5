@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    // 10. array ascending  order sort.
+    var arr = [12,15,9,5,75,35,45,96,94,99,22,48];
+
+    for (var i = 0; i < arr.length; i++) {
+        var tmp;
+        for (var j = i + 1; j < arr.length; j++) {
+            if(arr[i]>arr[j]){
+            tmp = arr[i]
+            arr[i] = arr[j]
+            arr[j] = tmp;
+            }
+        }
+    }
+    console.log(arr);
+</script>
